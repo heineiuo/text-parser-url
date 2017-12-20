@@ -1,0 +1,22 @@
+{
+  "name": "text-parser-url",
+  "version": "0.0.1",
+  "description": "text parser for url",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heineiuo/text-parser-url.git"
+  },
+  "keywords": [
+    "text-parser"
+  ],
+  "author": "@heineiuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heineiuo/text-parser-url/issues"
+  },
+  "homepage": "https://github.com/heineiuo/text-parser-url#readme"
+}
