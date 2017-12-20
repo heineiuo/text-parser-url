@@ -71,7 +71,7 @@ textParserUrl('www.github.com', {
 // [ 
 //   { type: 'url', value: 'www.github.com' },
 // ]
-
+```
 
 ## License
 
