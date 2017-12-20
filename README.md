@@ -52,6 +52,27 @@ const result = textParserUrl('project address: https://github.com/heineiuo/text-
 
 ```
 
+2. `requireProtocol`
+```javascript
+const textParserUrl = require('text-parser-url')
+
+textParserUrl('www.github.com', {
+  requireProtocol: true
+})
+// =>
+// [ 
+//   { type: 'raw', value: 'project address: ', len: 0 },
+// ]
+
+textParserUrl('www.github.com', {
+  requireProtocol: false
+})
+// =>
+// [ 
+//   { type: 'url', value: 'project address: ', len: 0 },
+// ]
+
+
 ## License
 
 MIT

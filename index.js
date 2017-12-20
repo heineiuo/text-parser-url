@@ -3,9 +3,12 @@ const defaultOnToken = function (e) {
 }
 
 const textParserUrl = function (input, options) {
-  const regex = /((?:https?(?::\/\/))(?:www\.)?[a-zA-Z0-9-_.]+(?:\.[a-zA-Z0-9]{2,})(?:[-a-zA-Z0-9:%_+.~#?&//=@]*))/
   options = options || {}
   const onToken = options.onToken || defaultOnToken
+  const requireProtocol = typeof options.requireProtocol === 'boolean' ? options.requireProtocol : true
+  const regex = new RegExp(
+    `((?:https?(?::\/\/))${requireProtocol ? '' : '?'}(?:www\.)?[a-zA-Z0-9-_.]+(?:\.[a-zA-Z0-9]{2,})(?:[-a-zA-Z0-9:%_+.~#?&//=@]*))`
+  )
   const ast = []
   let step = input.match(regex)
   let str = input
