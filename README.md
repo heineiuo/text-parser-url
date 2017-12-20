@@ -1,7 +1,7 @@
 # text-parser-url
 text parser to parse url
 
-===
+---
 
 ## Install
 
@@ -12,7 +12,7 @@ npm i text-parser-url
 ## quick start
 
 ```javascript
-const textParserUrl = require('text-parser-url)
+const textParserUrl = require('text-parser-url')
 
 const result = textParserUrl('project address: https://github.com/heineiuo/text-parser-url, author: https://github.com/heineiuo enjoy it!')
 // =>
@@ -31,7 +31,7 @@ const result = textParserUrl('project address: https://github.com/heineiuo/text-
 1. `onToken`
 
 ```javascript
-const textParserUrl = require('text-parser-url)
+const textParserUrl = require('text-parser-url')
 
 let len = 0
 const result = textParserUrl('project address: https://github.com/heineiuo/text-parser-url, author: https://github.com/heineiuo enjoy it!', {
