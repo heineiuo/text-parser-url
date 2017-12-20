@@ -61,7 +61,7 @@ textParserUrl('www.github.com', {
 })
 // =>
 // [ 
-//   { type: 'raw', value: 'project address: ', len: 0 },
+//   { type: 'raw', value: 'www.github.com' },
 // ]
 
 textParserUrl('www.github.com', {
@@ -69,7 +69,7 @@ textParserUrl('www.github.com', {
 })
 // =>
 // [ 
-//   { type: 'url', value: 'project address: ', len: 0 },
+//   { type: 'url', value: 'www.github.com' },
 // ]
 
 
