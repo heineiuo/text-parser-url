@@ -6,7 +6,7 @@ const textParserUrl = function (input, options) {
   options = options || {}
   const onToken = options.onToken || defaultOnToken
   const requireProtocol = typeof options.requireProtocol === 'boolean' ? options.requireProtocol : true
-  const regex = new RegExp(
+  const regex = options.regex || new RegExp(
     `((?:https?(?::\/\/))${requireProtocol ? '' : '?'}(?:www\.)?[a-zA-Z0-9-_\S]+(?:\.[a-zA-Z0-9]{2,})(?:[-a-zA-Z0-9:%_+.~#?&//=@]*))`
   )
   const ast = []

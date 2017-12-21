@@ -73,6 +73,9 @@ textParserUrl('www.github.com', {
 // ]
 ```
 
+3. `regex`
+custom url regex. requireProtocol will be disabled
+
 ## License
 
 MIT
